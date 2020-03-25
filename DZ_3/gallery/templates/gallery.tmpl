@@ -1,0 +1,12 @@
+<!-- begin: gallery.tmpl -->
+
+	<div class="post_title"><h2>{{ title }}</h2></div>
+	<div class="gallery">
+	{% for item in img %}
+ 		<a rel="gallery" class="photo" href="{{ item.imgBig }}" target="_blank">
+ 			<img src="{{ item.imgSmall }}" alt="" />
+ 		</a>
+	{% endfor %}
+	</div>
+
+<!-- end: gallery.tmpl →
